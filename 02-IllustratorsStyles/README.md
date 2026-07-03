@@ -1,4 +1,4 @@
-# 🏗️ Under Constructions🏗️
+# Illustrator Styles & Setup
 
 # Document Settings
 
@@ -21,6 +21,7 @@
 # Colors Palettes
 
 - [IBM colorpalette](https://github.com/IBM-Design/colors/blob/master/ibm-colors.ase): comes from the IBM design language which to be honest is a must to scroll through to understand how to make unified good design. It is also consisten with the [prettyplot class](../01-Plotting/pyprettyplot/), which include the `ibm` class to retrieve the colors (for instance `ibm.cerulean(shade = 60)`). 
+- [ScientificColorMap](./ColorPalettes/ScientificColorMap/) (`.ase` swatches): Fabio Crameri's [Scientific Colour Maps](https://www.fabiocrameri.ch/colourmaps/), redistributed here under their [open license terms](https://www.fabiocrameri.ch/ws/media-library/ce2eb6eee7c345f999e61c02e2733962/readme_scientificcolourmaps.pdf#Acknowledgement) — when you use these in a figure, credit Crameri's work as described there. Recommended for 2D map plots: `batlow`, `oslo` (or `oslo_r`), `lipari`.
 
 
 # Handling bitmap figures (png, jpg, etc.)  
