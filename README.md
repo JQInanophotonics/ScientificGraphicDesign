@@ -1,29 +1,33 @@
 # Scientific Graphic Design
 
-This repository is the entry point for making publication-quality figures
-in the Srinivasan Group at JQI. It covers the tools and habits used across
-the group to turn data into clear, professional figures: plotting in
-Python/Plotly, finishing in Adobe Illustrator, and 3D rendering in
-Blender.
+## Forewords
+
+A good figure does a lot of the persuading in a paper before anyone reads
+a word of the text — and a bad one (mismatched fonts, inconsistent colors,
+axes that don't line up figure to figure) undercuts even solid results.
+This repo is the group's guide to the tools and habits behind
+publication-quality figures: plotting data in Python/Plotly, finishing and
+styling in Adobe Illustrator, and 3D rendering in Blender, plus the fonts
+and color palettes that tie them together.
+
+Read the pages in order the first time — each one builds on the last; use
+them as a checklist afterwards — same spirit as
+[ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement).
+If you're only after a boilerplate or an example file, jump directly into
+the relevant folder without reading the tutorial.
+
+Slide-deck and presentation-specific guidance (structuring a talk,
+animating figures, Beamer) lives in
+[ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations)
+— this repo covers the figures themselves, that one covers assembling them
+into a talk.
 
 Feel free to tweak and contribute via pull requests. If you use tips or
 assets from here, let Greg Moille know by [email](mailto:gmoille@umd.edu)
 or any other [means](https://srinivasan.jqi.umd.edu/people/gregory-moille)
 — always glad to hear it's being put to good use.
 
-# What is it about?
-
-A compilation of tips, tricks, and boilerplate assets for making scientific
-figures, gathered over years of preparing figures for publication.
-
-# How to use this repository?
-
-This repository is organized by graphic design aspect, numbered in the
-suggested reading order for someone new to the group. If you're only
-after boilerplates or example files, jump directly into the relevant
-folder without reading the tutorials.
-
-# Basic Graphic Design
+## Basic Graphic Design
 
 We won't go over the basics of graphic design in depth here. The two
 things worth emphasizing:
@@ -55,26 +59,49 @@ Beyond that, if you want to go deeper, we recommend the following resources (and
     - Thinking with Type by Ellen Lupton
     - The Elements of Typographic Style by Robert Bringhurst
 
-# Figure for Publication
+## The rules, in one screen
 
-A compilation of tips and tricks for plotting, tweaking, and creating figures for scientific publication, in suggested reading order:
+The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
+[01 — Plotting data](01-Plotting/); the short version:
 
-1. [Plotting data](./01-Plotting/)
-2. [Adobe Illustrator styles and tips](./02-IllustratorsStyles)
-3. [Blender boiler-plate files and assets](./03-BlenderBoilerPlates)
-4. [Fonts](./04-Fonts)
+1. **Clarity, simplicity, consistency.** One point per plot, no superfluous elements (no box/grid/fine ticks you don't need), and the same style across every figure in a given paper.
+2. **One font family, one set of sizes, everywhere.** Default is Helvetica Neue: tick labels 6pt, axis labels 7pt, annotations 7pt, subplot labels 8pt bold — all in `#2E3440`, not true black.
+3. **One set of line rules, everywhere.** Tick length 2pt, tick width 0.5pt, axis width 0.5pt, plot line width 0.75pt unless you're emphasizing a curve.
+4. **Design for colorblindness** — don't rely on red/green alone to distinguish curves; check Illustrator's proof-colors view (Protanopia/Deuteranopia) before calling a figure done.
+5. **Save vector** (PDF/SVG/EPS), and **embed any bitmap** before the figure ships for publication — linking is fine while you're still working the file (see [02 — Illustrator styles](02-IllustratorsStyles/) for why), but a linked file breaks the moment the source image moves.
+6. **Keep figures under ~10MB.** If you're over that, your bitmap isn't rasterized properly or your data isn't processed down to what the plot actually needs.
 
-# Making slides
+## Pages
 
-Slide-deck and presentation guidance now lives in the
-[ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations)
-repo.
+| Page | What it covers |
+|------|-----------------|
+| [01 — Plotting data](01-Plotting/) | Plotting principles, color palettes/colormaps, the `pyprettyplot` Python package, and a worked example |
+| [02 — Illustrator styles](02-IllustratorsStyles/) | Document settings, grids, color palettes, handling bitmaps, and export presets for Adobe Illustrator |
+| [03 — Blender boilerplates](03-BlenderBoilerPlates/) | Ready-made renders and reusable assets for photonics-style figure illustrations |
+| [04 — Fonts](04-Fonts/) | Recommended fonts for figures, and why we don't bundle font files here |
 
-# Related repos
+## What's in this repo
 
-Part of the [JQInanophotonics](https://github.com/JQInanophotonics) org:
-- [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations) — talk design and slide decks
-- [ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement) — data collection and archival
-- [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting) — paper composition and citation practices
-- [InstrumentControl](https://github.com/JQInanophotonics/InstrumentControl) — lab equipment operation
-- [3DPrintedLabParts](https://github.com/JQInanophotonics/3DPrintedLabParts) — shared fabricated part designs
+```
+ScientificGraphicDesign/
+├── README.md
+├── TODO.md
+├── 01-Plotting/
+│   ├── README.md
+│   ├── pyprettyplot/
+│   ├── ExampleDataSet/
+│   └── Notebook.ipynb
+├── 02-IllustratorsStyles/
+│   ├── README.md
+│   └── ColorPalettes/
+├── 03-BlenderBoilerPlates/
+│   ├── README.md
+│   ├── Assets/
+│   └── MiscModels/
+└── 04-Fonts/
+    └── README.md
+```
+
+## See also
+
+Sibling repos in the [JQInanophotonics](https://github.com/JQInanophotonics) org: [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations) — talk design and slide decks, [ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement) — data collection and archival, [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting) — paper composition and citation practices, [InstrumentControl](https://github.com/JQInanophotonics/InstrumentControl) — lab equipment operation, [3DPrintedLabParts](https://github.com/JQInanophotonics/3DPrintedLabParts) — shared fabricated part designs.

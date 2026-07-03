@@ -4,27 +4,27 @@
 
 - **Clarity, simplicity, consistency**. If there is only one rule you need to remember, it's this one. Your goal is to balance 
     - _Clarity_ of the message: your plot (or subplots) conveys **one and only one point** and needs to be understood at first glance.
-    \- _Simplicity_: avoid unnecessary plot elements. _Does your plot need a surrounding box, fine tick spacing, or a grid?_ Remove **all superficial** elements.
+    - _Simplicity_: avoid unnecessary plot elements. _Does your plot need a surrounding box, fine tick spacing, or a grid?_ Remove **all superficial** elements.
     - _Consistency_ throughout your plots. Tastes and colors vary, and some people won't like your style for a given paper, but so be it. However, not having consistent size (axis spine, fonts, etc.), color coding, and so on makes your whole work sloppy and will give the impression of an unpolished work. In contrast, a consistent style will make your work look professional and show that you actually cared for your work.
-- **Stick to a style** and try to find works well for you
-- **Don't reinvent the wheel.** Usually, big journal hired real graphic designer so their style are never off. It can be be a great starting point. Similar for color palette, professional already took care of it. 
-- **Create a habit** Always try to plot your figures as if you will publish them. It will create a mental gymnastic, leading to muscle memory, making clear and simple figures much easier over time.
+- **Stick to a style** and try to find what works well for you.
+- **Don't reinvent the wheel.** Usually, big journals have hired real graphic designers, so their style is rarely off — it can be a great starting point. Same for color palettes: professionals already took care of it.
+- **Create a habit.** Always try to plot your figures as if you will publish them. It will create a mental gymnastic, leading to muscle memory, making clear and simple figures much easier over time.
 - **Make it automatic**. Minimize your workload by creating a function/module/etc. that pre-loads your style and makes consistency automatic, for instance using the [pyprettyplot package here](./pyprettyplot). The same goes for exporting the figure; you don't want to spend too much time tweaking things in the vector software because you didn't plot things correctly.
 
 
 ## Colorpalettes and colormaps 
 
-A detail discussion on what kind of color palettes and colormap should be use for efficient visualization. Most of these paletes are available through python packages: 
+A detailed discussion on what kind of color palettes and colormaps should be used for efficient visualization. Most of these palettes are available through Python packages: 
 - [Scientific Colormap](https://www.fabiocrameri.ch/colourmaps/) 
-by Fabio Crameri can be installed through the [cmcrameri pypi packaged](https://pypi.org/project/cmcrameri/0.11/). I highly recommand using `batlow`, `oslo` (or its reverse version `oslo_r`) and `lipari` for 2D map plot. Also don't forget to acknowledge his work if you use this colors ([more info](https://www.fabiocrameri.ch/ws/media-library/ce2eb6eee7c345f999e61c02e2733962/readme_scientificcolourmaps.pdf#Acknowledgement))
+by Fabio Crameri can be installed through the [cmcrameri pypi package](https://pypi.org/project/cmcrameri/0.11/). We highly recommend using `batlow`, `oslo` (or its reverse version `oslo_r`) and `lipari` for 2D map plots. Also don't forget to acknowledge his work if you use these colors ([more info](https://www.fabiocrameri.ch/ws/media-library/ce2eb6eee7c345f999e61c02e2733962/readme_scientificcolourmaps.pdf#Acknowledgement))
 - [IBM color palettes](https://www.ibm.com/design/language/color) (along with some other good palettes) can be installed through the [SecretColors module](https://github.com/secretBiology/SecretColors)
 
 
 ## Python Plotting—[`pyprettyplot`](./pyprettyplot/)    
 
-As mentioned, you should make plotting your figure automatic. On my end, I use the [`plotly`](https://plotly.com/python/) package for plotting, as it enables interactive plotting and easy HTML export (while keeping the interaction), which I can then embed in Notion.
+As mentioned, you should make plotting your figure automatic. We use the [`plotly`](https://plotly.com/python/) package for plotting, as it enables interactive plotting and easy HTML export (while keeping the interaction), which can then be embedded in Notion.
 
-To maintain a consistent style across my figures, either during experiments or when I prepare paper figures, I created a simple package for my notebooks, [`pyprettyplot`](./pyprettyplot/).
+To maintain a consistent style across figures, either during experiments or when preparing paper figures, we built a simple package for our notebooks, [`pyprettyplot`](./pyprettyplot/).
 
 ### How to install it? 
 
@@ -54,36 +54,20 @@ And voilà, you are all set. By default, the style will be:
 You can find a detailed example in this [notebook](./Notebook.ipynb) demonstrating the creation of a subpanel from figure 2 in this [paper](https://pubs.aip.org/app/article/10/1/016104/3330155/All-optical-azimuthal-trapping-of-dissipative-Kerr)
 
 
-## Ploting is only 75% of the job 
+## Plotting is only 75% of the job 
 
 Plotting the data will probably get you up to 3/4 of the way to a complete figure. You will still have to edit it in Adobe Illustrator, Inkscape, or whatever your software of choice is. Hence, keep in mind that you want to plot and make your life easier for editing, meaning:
 
 - Make your plot the right size 
 - Make all your font the right size 
-- Avoid the need for unecessary edit
+- Avoid the need for unnecessary edits
 
-If you did that correctly, then the work that will be done in Adobe Illustrator/Inkscape/etc. will be much easier. Some tips for Adobe Illustrator are provided here.
+If you did that correctly, then the work that will be done in Adobe Illustrator/Inkscape/etc. will be much easier. Some tips for Adobe Illustrator are provided in [02 — Illustrator styles](../02-IllustratorsStyles).
 
-## Some tips for archiving
+## Archiving your figure data
 
-1. Create a GitHub repo (at least private at first) that you name after your paper (e.g. `202X-MySuperPaper`), and clone it to where you store your paper data.  
-2. Process your data such that every trace plot/subplot is a simple CSV file that can be easily loaded (e.g. `df = pd.read_csv('figure1a.csv')`).  
-3. Store each of your paper data in the following way.
-```
-    ├── 202X-MySuperPaper
-    │   ├── figure1
-    │   │   ├── figure1a.csv
-    │   │   ├── figure1b.csv
-    │   ├── figure2
-    │   │   ├── figure2a.csv
-    │   │   ├── figure2b.csv
-    │   ├── svg
-    │   │   ├── figure1.svg
-    │   │   ├── figure2.svg
-    ├── 202X-MySuperPaper_Notebook.ipynb
-    └── .gitignore
-```
-4. In the `202X-MySuperPaper_Notebook.ipynb`, you create each plot using the `pyprettyplot` package, loading all the necessary data in a simple manner and saving the figure as an SVG file in the `svg` folder.  
-5. You **version control** this repository using Git (and if you don't know Git... well, you better learn it then).  
-6. This folder is different from your LaTeX manuscript folder, where you will store the final figures. This prevents over-bloating your manuscript folder and makes it easier to version control with Overleaf (you should not use Overleaf in a different manner, by the way).  
-7. (DO NOT STORE IT IN A CLOUD FOLDER; Git doesn't do well with that.)
+Full guidance on structuring, storing, and version-controlling your paper's
+data — including where figure data and notebooks belong relative to your
+manuscript folder — lives in
+[ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement).
+Worth revisiting as a reminder before you start a new paper's figures.
