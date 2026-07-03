@@ -21,7 +21,7 @@
 # Colors Palettes
 
 - [IBM colorpalette](https://github.com/IBM-Design/colors/blob/master/ibm-colors.ase): comes from the IBM design language which to be honest is a must to scroll through to understand how to make unified good design. It is also consisten with the [prettyplot class](../01-Plotting/pyprettyplot/), which include the `ibm` class to retrieve the colors (for instance `ibm.cerulean(shade = 60)`). 
-- [ScientificColorMap](./ColorPalettes/ScientificColorMap/) (`.ase` swatches): Fabio Crameri's [Scientific Colour Maps](https://www.fabiocrameri.ch/colourmaps/), redistributed here under their [open license terms](https://www.fabiocrameri.ch/ws/media-library/ce2eb6eee7c345f999e61c02e2733962/readme_scientificcolourmaps.pdf#Acknowledgement) — when you use these in a figure, credit Crameri's work as described there. Recommended for 2D map plots: `batlow`, `oslo` (or `oslo_r`), `lipari`.
+- [ScientificColorMap](./ColorPalettes/ScientificColorMap/) (`.ase` swatches): Fabio Crameri's [Scientific Colour Maps](https://www.fabiocrameri.ch/colourmaps/), redistributed here under their [open license terms](https://www.fabiocrameri.ch/ws/media-library/ce2eb6eee7c345f999e61c02e2733962/readme_scientificcolourmaps.pdf#Acknowledgement) — when you use these in a figure, credit Crameri's work as described there. Recommended for 2D map plots: `batlow`, `oslo` (or `oslo_r`); `lipari` is also excellent but isn't among the palettes bundled here — get it separately from the link above if you want it.
 
 
 # Handling bitmap figures (png, jpg, etc.)  
@@ -44,7 +44,7 @@ This will probably give y ou good results. If you find that the figures became t
 
 # Graphics design consistency
 
-- **Use the same font for all your figures**. For info, here is what we use (see [Fonts](../Fonts) for the full recommendation list): 
+- **Use the same font for all your figures**. For info, here is what we use (see [Fonts](../04-Fonts) for the full recommendation list): 
     - tick labels: Helvetica Neue Regular 6pt
     - axis labels: Helvetica Neue Regular 7pt
     - legend: Helvetica Neue Regular 6pt
