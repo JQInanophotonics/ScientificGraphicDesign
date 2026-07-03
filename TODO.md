@@ -29,5 +29,6 @@ tidy-up (see `docs/superpowers/specs/2026-07-03-repo-tidy-up-design.md`).
   and width, glyph coverage, picking a font as a scientist).
 
 ## Repo administration
-- Transfer this repo from `gregmoille/ScientificGraphicDesign` to the
-  `JQInanophotonics` GitHub org (Settings → Transfer ownership).
+- ~~Transfer this repo from `gregmoille/ScientificGraphicDesign` to the
+  `JQInanophotonics` GitHub org~~ — done; `origin` now points at
+  `github.com/JQInanophotonics/ScientificGraphicDesign`.
