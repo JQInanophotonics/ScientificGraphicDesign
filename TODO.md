@@ -10,6 +10,9 @@ tidy-up (see `docs/superpowers/specs/2026-07-03-repo-tidy-up-design.md`).
 - Update the package's default font references (currently Aktiv Grotesk
   Condensed / Decima) to Helvetica Neue, matching the new repo-wide
   default documented in `04-Fonts/README.md`.
+- Update the package's default axis/tick color from `#2E3440` to true
+  black, matching the reverted house style documented in the root
+  `README.md` and `02-IllustratorsStyles/README.md`.
 - Clean up untracked stray files (`matplotlibrc`, `fonts/`) once the
   package structure is finalized.
 

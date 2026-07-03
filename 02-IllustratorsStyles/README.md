@@ -28,9 +28,8 @@
 
 Of course, most of your figures will be in vector format. But sometimes you'll need to put some bitmap in your file (e.g. a photo of your sample). To do so, you can use the following steps:
 - Do not mask the bitmap figure. Instead crop it, as it will reduce its size.
-- Do not link the bitmap figure. Instead, embed it in the document. To do so, go to Properties > Quick Actions > Embed Image. This will make the file size larger, but it is necessary for publication.
-
-While you're still working the file (before final export), keeping large raster assets **linked** instead of embedded keeps your working `.ai` file small and responsive — Illustrator only stores a reference plus a low-res preview, not the full image data. To stop Illustrator from silently embedding a preview of linked images every time you save, uncheck **"Create PDF Compatible File"** in the save dialog. Just remember to embed (or re-embed) any linked bitmaps before you hand off the final figure for publication, per the step above — a linked file breaks for anyone else opening it if the source image has moved.
+- Keep the bitmap **linked**, not embedded, in the `.ai` file. Linking (instead of Properties > Quick Actions > Embed Image) keeps your working file small and responsive — Illustrator only stores a reference plus a low-res preview, not the full image data. You don't lose anything at publication time: when you export/save to PDF, Illustrator embeds the linked raster data into the PDF automatically, so the final deliverable is self-contained.
+- To stop Illustrator from silently embedding a preview of linked images every time you save the `.ai` file, uncheck **"Create PDF Compatible File"** in the save dialog.
 
 To reduce the size of the bitmap figure, you can use the following steps:
 - Select the object you want to rasterize
@@ -52,12 +51,12 @@ This will probably give you good results. If you find that the figures became to
     - legend: Helvetica Neue Regular 6pt
     - Annotation: Helvetica Neue Regular 7pt
     - Subplot label: Helvetica Neue Bold 8pt
-    - All with the same colors:  #2E3440 (true black usually not great)
+    - All in the same color: true black
 - **Be consistent in your plotting**. For instance, all our plots have the same rules: 
     - tick length: 2pt
     - tick width: 0.5pt
     - axis width: 0.5pt
-    - axis color: #2E3440 (true black usually not great)
+    - axis color: true black
     - unless emphasis, plot line width: 0.75pt
 - **Be consistent in your colors**. Use the same colors if it is from the same sample/dataset. 
 
