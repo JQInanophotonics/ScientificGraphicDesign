@@ -37,7 +37,7 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 3. **One set of line rules, everywhere.** Tick length 2pt, tick width 0.5pt, axis width 0.5pt, plot line width 0.75pt unless you're emphasizing a curve.
 4. **Design for colorblindness** — don't rely on red/green alone to distinguish curves; check Illustrator's proof-colors view (Protanopia/Deuteranopia) before calling a figure done.
 5. **Save vector** (PDF/SVG/EPS). Keep any bitmap **linked**, not embedded, in the `.ai` file — PDF export embeds the raster data into the PDF automatically, so there's no need to embed it by hand (see [02 — Illustrator styles](02-IllustratorsStyles/)).
-6. **Keep figures under ~10MB.** If you're over that, your bitmap isn't rasterized properly or your data isn't processed down to what the plot actually needs.
+6. **Keep figures well under 50MB.** Overleaf's git-synced projects cap individual files at 50MB and recommend keeping the whole project under 100MB total — with dozens of figures in a paper, budget each one well below its share of that, not right up against the ceiling. If a single figure is anywhere near it, your bitmap isn't rasterized properly or your data isn't processed down to what the plot actually needs.
 
 ## Pages
 

@@ -77,5 +77,5 @@ To save a pdf that is optimized for publication in a paper, install the [custom 
 
 # Advices
 
-- Your figures will probably never exceed 10MB. If they do, you either didn't rasterize your bitmap properly or didn't process your data properly (e.g. way too many points that are useless). The 10MB rule of thumb also keeps things compatible with Overleaf's git server. 
+- Keep your figures well under Overleaf's hard 50MB-per-file limit for git-synced projects — and since Overleaf also recommends keeping the whole project under 100MB total, budget each figure well below its share of that, not right up against the ceiling. If a single figure is anywhere near it, you either didn't rasterize your bitmap properly or didn't process your data properly (e.g. way too many points that are useless). 
 - Keeping the size of your figure as it will appear in the manuscript helps you keep consistency over the element size (font, line stroke, etc.). After saving and while embedding the figure **YOU SHOULD NOT HAVE TO USE `[width=\textwidth]` in the `\includegraphics` command**. If you do, it means that your figure is not the right size, and you messed up somewhere. 
