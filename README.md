@@ -76,7 +76,7 @@ We won't go over the basics of graphic design in depth here. The two
 things worth emphasizing:
 
 1. Learn how to use a [color wheel](https://www.canva.com/colors/color-wheel/).
-2. Make sure you understand the [meaning of color](https://webflow.com/blog/color-meanings) (e.g., red = bad, green = good, blue = calm/modern, etc.). Don't use a red color for something you want to highlight as good.
+2. Make sure you understand the [meaning of color](https://webflow.com/blog/color-meanings) (e.g., red = bad, green = good, blue = calm/modern, etc.). Don't use a red color for something you want to highlight as good — keep in mind this is culturally dependent (red is good in some cultures), but academia runs on largely Western-coded conventions, courtesy of a certain island's historical habit of showing up everywhere.
 3. Learn [how to use a grid](https://uxplanet.org/grids-in-graphic-design-a-quick-history-and-5-top-tips-29c8c0650d18).
 4. Know that not everybody sees things like you do — make sure your design is inclusive and accessible for color blindness. Use tools (protanopia or deuteranopia mode in Adobe Illustrator) and don't rely solely on color to distinguish curves.
 
