@@ -5,7 +5,7 @@ setup(
     version="1.0",
     packages=["pyprettyplot"],
     description="Pretty Plotter For Plotly",
-    url="https://github.com/gregmoille/ScientificGraphicDesign/tree/main/Plotting/pyprettyplot",
+    url="https://github.com/gregmoille/ScientificGraphicDesign/tree/main/01-Plotting/pyprettyplot",
     author="Greg Moille",
     author_email="gmoille@umd.edu",
     license="Open",

@@ -1,32 +1,41 @@
-# 🏗️ Under Constructions🏗️
+# Scientific Graphic Design
 
-# Couple of disclaimers
+This repository is the entry point for making publication-quality figures
+in the Srinivasan Group at JQI. It covers the tools and habits used across
+the group to turn data into clear, professional figures: plotting in
+Python/Plotly, finishing in Adobe Illustrator, and 3D rendering in
+Blender.
 
-This repo aims to helps users create pretty figures for publication or presentation following basic graphic design guidelines. I will only take requests that benefit the community. I may share workflow tips for Blender/Adobe Illustrator if needed. Feel free to tweak and contribute via pull requests!
+Feel free to tweak and contribute via pull requests. If you use tips or
+assets from here, let Greg Moille know by [email](mailto:gmoille@umd.edu)
+or any other [means](https://srinivasan.jqi.umd.edu/people/gregory-moille)
+— always glad to hear it's being put to good use.
 
-If you use this work, please let me know by [email](mailto:gmoile@umd.edu) or any other [means](https://srinivasan.jqi.umd.edu/people/gregory-moille)---I'll be glad to hear it's being put to good use!
+# What is it about?
 
-# What is it about? 
+A compilation of tips, tricks, and boilerplate assets for making scientific
+figures, gathered over years of preparing figures for publication.
 
-Just some compilation of tips, tricks and stuff that I found over the years of making scientific figures and presentations. I will try to keep it updated as I learn new things, but don't expect much either
+# How to use this repository?
 
-# How to use this repository? 
+This repository is organized by graphic design aspect, numbered in the
+suggested reading order for someone new to the group. If you're only
+after boilerplates or example files, jump directly into the relevant
+folder without reading the tutorials.
 
-This repository is organized by graphic design aspects, allowing users to focus on specific sections of interest. For those seeking only boilerplates or example files, these can be accessed directly without consulting the tutorials.
+# Basic Graphic Design
 
-
-# Basic Graphic Design 
-
-I am not going to go over the basics of graphic design much. The only two things that I want to emphasize are:
+We won't go over the basics of graphic design in depth here. The two
+things worth emphasizing:
 
 1. Learn how to use a [color wheel](https://www.canva.com/colors/color-wheel/).
-2. Make sure you understand the [meaning of color](https://webflow.com/blog/color-meanings) (e.g., red = bad, green = good, blue = calm/modern, etc.). So don't use a red color for something you want to highlight as good.
+2. Make sure you understand the [meaning of color](https://webflow.com/blog/color-meanings) (e.g., red = bad, green = good, blue = calm/modern, etc.). Don't use a red color for something you want to highlight as good.
 3. Learn [how to use a grid](https://uxplanet.org/grids-in-graphic-design-a-quick-history-and-5-top-tips-29c8c0650d18).
-4. Know that not everybody sees things like you, and make sure your design is inclusive and accessible for color blindness. Use tools (pranatopia or deuteranopia mode in Adobe Illustrator) and do not solely rely on solid curves.
+4. Know that not everybody sees things like you do — make sure your design is inclusive and accessible for color blindness. Use tools (protanopia or deuteranopia mode in Adobe Illustrator) and don't rely solely on color to distinguish curves.
 
-Beyond that, if there are some things that are of interest, I highly recommend the following resources (and if you know me, you can probably ask me to borrow a copy of the books):
+Beyond that, if you want to go deeper, we recommend the following resources (and if you know Greg, you can probably borrow a copy):
 - **Basic knowledge of graphic design**:
-    - The elements of graphic design by Alex W. White
+    - The Elements of Graphic Design by Alex W. White
     - Beautiful Evidence by Edward Tufte
 - **Layout and structure**
     - Making and Breaking the Grid, Third Edition: A Graphic Design Layout Workshop
@@ -35,11 +44,11 @@ Beyond that, if there are some things that are of interest, I highly recommend t
     - Interaction of Color by Josef Albers
     - Color by Betty Edwards
     - Color Index by Jim Krause
-    - Just the Panton book to be honest, and browse it when you need to
+    - The Pantone book, browsed whenever you need it
 - **Psychology of graphic design**
     - 100 Things Every Designer Needs to Know About People by Susan Weinschenk
     - The Design of Everyday Things by Don Norman
-    - Book of branding by Radim Malinic
+    - Book of Branding by Radim Malinic
 - **Scientific Display**
     - The Visual Display of Quantitative Information by Edward Tufte
 - **Typography**
@@ -48,19 +57,24 @@ Beyond that, if there are some things that are of interest, I highly recommend t
 
 # Figure for Publication
 
-Here is a compilation of some tips and tricks for plotting, tweaking, and creating figures for scientific publication.
+A compilation of tips and tricks for plotting, tweaking, and creating figures for scientific publication, in suggested reading order:
 
-## [Plotting data](./Plotting/)
+1. [Plotting data](./01-Plotting/)
+2. [Adobe Illustrator styles and tips](./02-IllustratorsStyles)
+3. [Blender boiler-plate files and assets](./03-BlenderBoilerPlates)
+4. [Fonts](./04-Fonts)
 
-## [Useful Adobe Illustrator stuff and tips](./IllustratorsStyles)
+# Making slides
 
-## [Blender boiler-plate files and assets](./BlenderBoilerPlates)
+Slide-deck and presentation guidance now lives in the
+[ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations)
+repo.
 
+# Related repos
 
-# Making Slides
-
-Here are some tips for creating a slide deck, where you can use Beamer (a LaTeX version of PowerPoint) or how to set your Adobe Illustrator figure for easy transition in a slide deck.
-
-## [Making life easier for slide deck figures](./SlideDeckFigures/)
-
-## [Making presentation with Beamer](./SlidesWithBeamer/)
+Part of the [JQInanophotonics](https://github.com/JQInanophotonics) org:
+- [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations) — talk design and slide decks
+- [ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement) — data collection and archival
+- [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting) — paper composition and citation practices
+- [InstrumentControl](https://github.com/JQInanophotonics/InstrumentControl) — lab equipment operation
+- [3DPrintedLabParts](https://github.com/JQInanophotonics/3DPrintedLabParts) — shared fabricated part designs

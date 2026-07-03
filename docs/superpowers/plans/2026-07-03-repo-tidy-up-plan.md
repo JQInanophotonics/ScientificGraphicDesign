@@ -87,13 +87,22 @@ Expected: succeeds silently. If `img/` is not empty, STOP and check with the use
 find . -name ".DS_Store" -not -path "./.git/*" -delete
 ```
 
-- [ ] **Step 6: Stage all the changes**
+- [ ] **Step 6: Stage only the intended changes**
+
+**Do NOT run a bare `git add -A`** — this repo has unrelated modified tracked files (`Plotting/pyprettyplot/{__init__.py,colors.py,dispersion.py}`) that a bare `-A` would sweep into this commit, violating the Global Constraints. Stage explicitly instead:
 
 ```bash
-git add -A
+git add SlideDeckFigures/README.md SlidesWithBeamer/README.md
+git add Plotting/pyprettyplot/__pycache__
 ```
 
-This picks up: the deletions of `SlideDeckFigures/README.md`, `SlidesWithBeamer/README.md`, and the 5 `__pycache__/*.pyc` files. `3Dprinting/` and `img/` produce no staged entries since they were untracked to begin with — their removal is just confirmed by `ls`/`test` in Step 7, not by `git status`.
+- [ ] **Step 6b: Confirm the unrelated WIP was NOT staged**
+
+```bash
+git status --short | grep -E "^ M Plotting/pyprettyplot/(__init__|colors|dispersion)\.py"
+```
+
+Expected: all 3 lines present with a leading space before the `M` (unstaged modification) — NOT `M ` or `MM` (which would mean it got staged). If any of these three files shows as staged, run `git restore --staged <file>` on it before continuing.
 
 - [ ] **Step 7: Verify the staged diff**
 
@@ -297,6 +306,26 @@ git mv IllustratorsStyles 02-IllustratorsStyles
 git mv BlenderBoilerPlates 03-BlenderBoilerPlates
 git mv Fonts 04-Fonts
 ```
+
+`git mv` on a directory containing a modified-but-uncommitted tracked file stages only the rename (old content at the new path) — the content modification itself stays unstaged at the new path. This is exactly what we want: it preserves the pyprettyplot WIP as an uncommitted diff, just relocated. Untracked files/directories inside the renamed folder move on disk automatically and remain untracked.
+
+- [ ] **Step 1b: Confirm the pyprettyplot WIP moved but stayed uncommitted/untracked**
+
+```bash
+git status --short | grep pyprettyplot
+```
+
+Expected output (paths now under `01-Plotting/`, each modification still unstaged — leading space before `M` on the second column of the `RM` entries, and `??` for the untracked ones):
+```
+RM Plotting/pyprettyplot/__init__.py -> 01-Plotting/pyprettyplot/__init__.py
+RM Plotting/pyprettyplot/colors.py -> 01-Plotting/pyprettyplot/colors.py
+RM Plotting/pyprettyplot/dispersion.py -> 01-Plotting/pyprettyplot/dispersion.py
+?? 01-Plotting/pyprettyplot/fonts/
+?? 01-Plotting/pyprettyplot/matplotlibrc
+```
+(exact ordering may vary; `01-Plotting/_pyprettyplot/` shows as its own untracked line elsewhere in `git status --short`, not matched by the `pyprettyplot` grep pattern above — check for it separately with `git status --short | grep _pyprettyplot`).
+
+If any of these show as fully staged (`M ` in the second column with no `R`, or the diff below is non-empty in `--cached`), STOP — do not proceed to Step 8's commit without first running `git restore --staged <file>` on the offending file(s).
 
 - [ ] **Step 2: Fix the stale path in setup.py**
 
@@ -514,8 +543,22 @@ Expected: no output from either (both stale relative paths fixed).
 
 - [ ] **Step 8: Commit**
 
+**Do NOT run a bare `git add -A`** — it would stage the pyprettyplot WIP's unstaged content modifications (confirmed unstaged in Step 1b). Exclude those exact paths explicitly:
+
 ```bash
-git add -A
+git add -A -- . \
+  ':!01-Plotting/pyprettyplot/__init__.py' \
+  ':!01-Plotting/pyprettyplot/colors.py' \
+  ':!01-Plotting/pyprettyplot/dispersion.py' \
+  ':!01-Plotting/_pyprettyplot' \
+  ':!01-Plotting/pyprettyplot/fonts' \
+  ':!01-Plotting/pyprettyplot/matplotlibrc'
+git status --short | grep pyprettyplot
+```
+
+Expected: same `RM`/`??` pattern as Step 1b — none of the six excluded paths became fully staged. If any did, `git restore --staged <file>` it before committing.
+
+```bash
 git commit -m "$(cat <<'EOF'
 Restructure into numbered sections, rewrite README, add TODO.md
 
