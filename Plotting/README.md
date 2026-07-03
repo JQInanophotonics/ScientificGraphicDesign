@@ -44,8 +44,8 @@ And voilà, you are all set. By default, the style will be:
 1. Axis with a linewidth of 0.5 pt with color #2E3440  
 2. Tick with a linewidth of 0.5 pt with color #2E3440, and a length of 2 pt  
 3. No top and right spines  
-4. Tick labels using Decima (fallback to default if not installed) 7 pt  
-5. Axis title labels using Aktiv Grotesk Condensed Regular (fallback to default if not installed) 8 pt  
+4. Tick labels using Helvetica Neue (fallback to default if not installed) 7 pt  
+5. Axis title labels using Helvetica Neue (fallback to default if not installed) 8 pt  
 6. Cycling color palette using the [Nord theme](https://www.nordtheme.com/docs/colors-and-palettes) #356BA0, #D18F98, #499E4B, #7181A3, #844A84, #7181A3, #BC394C'
 
 

@@ -43,12 +43,12 @@ This will probably give y ou good results. If you find that the figures became t
 
 # Graphics design consistency
 
-- **Use the same font for all your figures**. For info, here is what I use: 
-    - tick labels: Decima Regular 6pt
-    - axis labels: Aktiv Grotesk Condensed Regular 7pt
-    - legend: Aktiv Grotesk Condensed Regular  6pt
-    - Annotation: Aktiv Grotesk Condensed Regular 7pt
-    - Subplot label: Aktiv Grotesk Condensed Bold 8pt
+- **Use the same font for all your figures**. For info, here is what we use (see [Fonts](../Fonts) for the full recommendation list): 
+    - tick labels: Helvetica Neue Regular 6pt
+    - axis labels: Helvetica Neue Regular 7pt
+    - legend: Helvetica Neue Regular 6pt
+    - Annotation: Helvetica Neue Regular 7pt
+    - Subplot label: Helvetica Neue Bold 8pt
     - All with the same colors:  #2E3440 (true black usually not great)
 - **Be consistent in your plotting**. For instance, all my plots have the same rules: 
     - tick length: 2pt
