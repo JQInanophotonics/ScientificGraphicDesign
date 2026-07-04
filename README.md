@@ -1,6 +1,14 @@
-# Scientific Graphic Design
+<div align="center">
 
-## Forewords
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/header.svg"/><img src="assets/header.svg" width="97%" alt="Scientific Graphic Design"/></picture>
+
+<a href="#pages"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/PAGES-0d1117?style=flat-square&logoColor=ffffff"/><img src="https://img.shields.io/badge/PAGES-ffffff?style=flat-square&logoColor=1a1a1a" alt="Pages"/></picture></a>
+<a href="https://github.com/JQInanophotonics/pyprettyplot"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/PYPRETTYPLOT-0d1117?style=flat-square&logoColor=ffffff"/><img src="https://img.shields.io/badge/PYPRETTYPLOT-ffffff?style=flat-square&logoColor=1a1a1a" alt="pyprettyplot"/></picture></a>
+<a href="https://github.com/JQInanophotonics/ScientificPresentations"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/PRESENTATIONS-0d1117?style=flat-square&logoColor=ffffff"/><img src="https://img.shields.io/badge/PRESENTATIONS-ffffff?style=flat-square&logoColor=1a1a1a" alt="ScientificPresentations"/></picture></a>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-forewords.svg"/><img src="assets/banner-forewords.svg" width="97%" alt="00 — Forewords"/></picture>
 
 A good figure does a lot of the persuading in a paper before anyone reads
 a word of the text — and a bad one (mismatched fonts, inconsistent colors,
@@ -27,7 +35,7 @@ assets from here, let Greg Moille know by [email](mailto:gmoille@umd.edu)
 or any other [means](https://srinivasan.jqi.umd.edu/people/gregory-moille)
 — always glad to hear it's being put to good use.
 
-## The rules, in one screen
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-the-rules.svg"/><img src="assets/banner-the-rules.svg" width="97%" alt="01 — The Rules, in One Screen"/></picture>
 
 The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 [01 — Plotting data](01-Plotting/); the short version:
@@ -39,7 +47,9 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 5. **Save vector** (PDF/SVG/EPS). Keep any bitmap **linked**, not embedded, in the `.ai` file — PDF export embeds the raster data into the PDF automatically, so there's no need to embed it by hand (see [02 — Illustrator styles](02-IllustratorsStyles/)).
 6. **Keep figures well under 50MB.** Overleaf's git-synced projects cap individual files at 50MB and recommend keeping the whole project under 100MB total — with dozens of figures in a paper, budget each one well below its share of that, not right up against the ceiling. If a single figure is anywhere near it, your bitmap isn't rasterized properly or your data isn't processed down to what the plot actually needs.
 
-## Pages
+<a id="pages"></a>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-pages.svg"/><img src="assets/banner-pages.svg" width="97%" alt="02 — Pages"/></picture>
 
 | Page | What it covers |
 |------|-----------------|
@@ -48,12 +58,13 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 | [03 — Blender boilerplates](03-BlenderBoilerPlates/) | Ready-made renders and reusable assets for photonics-style figure illustrations |
 | [04 — Fonts](04-Fonts/) | Recommended fonts for figures, and why we don't bundle font files here |
 
-## What's in this repo
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-repo-layout.svg"/><img src="assets/banner-repo-layout.svg" width="97%" alt="03 — What's in This Repo"/></picture>
 
 ```
 ScientificGraphicDesign/
 ├── README.md
 ├── TODO.md
+├── assets/                    # this README's own banners (light + dark/), not figure content
 ├── 01-Plotting/
 │   ├── README.md
 │   ├── ExampleDataSet/
@@ -69,7 +80,7 @@ ScientificGraphicDesign/
     └── README.md
 ```
 
-## Basic Graphic Design
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-basic-design.svg"/><img src="assets/banner-basic-design.svg" width="97%" alt="04 — Basic Graphic Design"/></picture>
 
 We won't go over the basics of graphic design in depth here. The two
 things worth emphasizing:
@@ -101,6 +112,6 @@ Beyond that, if you want to go deeper, we recommend the following resources (and
     - Thinking with Type by Ellen Lupton
     - The Elements of Typographic Style by Robert Bringhurst
 
-## See also
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-see-also.svg"/><img src="assets/banner-see-also.svg" width="97%" alt="05 — See Also"/></picture>
 
 Sibling repos in the [JQInanophotonics](https://github.com/JQInanophotonics) org: [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations) — talk design and slide decks, [ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement) — data collection and archival, [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting) — paper composition and citation practices, [InstrumentControl](https://github.com/JQInanophotonics/InstrumentControl) — lab equipment operation, [3DPrintedLabParts](https://github.com/JQInanophotonics/3DPrintedLabParts) — shared fabricated part designs. Python plotting library: [pyprettyplot](https://github.com/JQInanophotonics/pyprettyplot).
