@@ -43,7 +43,7 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 
 | Page | What it covers |
 |------|-----------------|
-| [01 — Plotting data](01-Plotting/) | Plotting principles, color palettes/colormaps, the `pyprettyplot` Python package, and a worked example |
+| [01 — Plotting data](01-Plotting/) | Plotting principles, color palettes/colormaps, the [`pyprettyplot`](https://github.com/JQInanophotonics/pyprettyplot) Python package, and a worked example |
 | [02 — Illustrator styles](02-IllustratorsStyles/) | Document settings, grids, color palettes, handling bitmaps, and export presets for Adobe Illustrator |
 | [03 — Blender boilerplates](03-BlenderBoilerPlates/) | Ready-made renders and reusable assets for photonics-style figure illustrations |
 | [04 — Fonts](04-Fonts/) | Recommended fonts for figures, and why we don't bundle font files here |
@@ -56,7 +56,6 @@ ScientificGraphicDesign/
 ├── TODO.md
 ├── 01-Plotting/
 │   ├── README.md
-│   ├── pyprettyplot/
 │   ├── ExampleDataSet/
 │   └── Notebook.ipynb
 ├── 02-IllustratorsStyles/
@@ -104,4 +103,4 @@ Beyond that, if you want to go deeper, we recommend the following resources (and
 
 ## See also
 
-Sibling repos in the [JQInanophotonics](https://github.com/JQInanophotonics) org: [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations) — talk design and slide decks, [ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement) — data collection and archival, [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting) — paper composition and citation practices, [InstrumentControl](https://github.com/JQInanophotonics/InstrumentControl) — lab equipment operation, [3DPrintedLabParts](https://github.com/JQInanophotonics/3DPrintedLabParts) — shared fabricated part designs.
+Sibling repos in the [JQInanophotonics](https://github.com/JQInanophotonics) org: [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations) — talk design and slide decks, [ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement) — data collection and archival, [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting) — paper composition and citation practices, [InstrumentControl](https://github.com/JQInanophotonics/InstrumentControl) — lab equipment operation, [3DPrintedLabParts](https://github.com/JQInanophotonics/3DPrintedLabParts) — shared fabricated part designs. Python plotting library: [pyprettyplot](https://github.com/JQInanophotonics/pyprettyplot).

@@ -20,17 +20,19 @@ by Fabio Crameri can be installed through the [cmcrameri pypi package](https://p
 - [IBM color palettes](https://www.ibm.com/design/language/color) (along with some other good palettes) can be installed through the [SecretColors module](https://github.com/secretBiology/SecretColors)
 
 
-## Python Plotting—[`pyprettyplot`](./pyprettyplot/)    
+## Python Plotting—[`pyprettyplot`](https://github.com/JQInanophotonics/pyprettyplot)
 
 As mentioned, you should make plotting your figure automatic. We use the [`plotly`](https://plotly.com/python/) package for plotting, as it enables interactive plotting and easy HTML export (while keeping the interaction), which can then be embedded in Notion.
 
-To maintain a consistent style across figures, either during experiments or when preparing paper figures, we built a simple package for our notebooks, [`pyprettyplot`](./pyprettyplot/).
+To maintain a consistent style across figures, either during experiments or when preparing paper figures, we built a simple package for our notebooks: [`pyprettyplot`](https://github.com/JQInanophotonics/pyprettyplot). It used to live in this repo but now has its own, so it can be installed and versioned independently of these tutorials.
 
 ### How to install it? 
 
-Two ways:  
--  Just download the pyprettyplot folder and put it in the current directory you are working in. Install any required packages (pandas/scipy/numpy/matplotlib/plotly/cmcrameri/SecretColors/nbformat/kaleido) by running `pip install -r requirements.txt`. This way, you will still be able to tweak it.  
--  If you use it often, it's better to install it system-wide by using the command `python ./setup.py install` in this downloaded folder.
+```
+pip install git+https://github.com/JQInanophotonics/pyprettyplot.git
+```
+
+See the [pyprettyplot README](https://github.com/JQInanophotonics/pyprettyplot) for the full defaults, styling options, and font install notes.
 
 ### How to use it? 
 
@@ -40,14 +42,7 @@ Not very complicated:
 from pyprettyplot import *
 ```
 
-And voilà, you are all set. By default, the style will be:  
-1. Axis with a linewidth of 0.5 pt with color #2E3440  
-2. Tick with a linewidth of 0.5 pt with color #2E3440, and a length of 2 pt  
-3. No top and right spines  
-4. Tick labels using Helvetica Neue (fallback to default if not installed) 7 pt  
-5. Axis title labels using Helvetica Neue (fallback to default if not installed) 8 pt  
-6. Cycling color palette using the [Nord theme](https://www.nordtheme.com/docs/colors-and-palettes) #356BA0, #D18F98, #499E4B, #7181A3, #844A84, #7181A3, #BC394C'
-
+And voilà, you are all set.
 
 ### Example of use
 

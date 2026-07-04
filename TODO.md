@@ -3,19 +3,6 @@
 Tracked follow-up work deliberately deferred during the 2026-07 repo
 tidy-up (see `docs/superpowers/specs/2026-07-03-repo-tidy-up-design.md`).
 
-## pyprettyplot (01-Plotting)
-- Resolve the duplicate package state: tracked `pyprettyplot/` vs
-  untracked `_pyprettyplot/` — decide on one name/location and remove the
-  other.
-- Update the package's default font references (currently Aktiv Grotesk
-  Condensed / Decima) to Helvetica Neue, matching the new repo-wide
-  default documented in `04-Fonts/README.md`.
-- Update the package's default axis/tick color from `#2E3440` to true
-  black, matching the reverted house style documented in the root
-  `README.md` and `02-IllustratorsStyles/README.md`.
-- Clean up untracked stray files (`matplotlibrc`, `fonts/`) once the
-  package structure is finalized.
-
 ## 03-BlenderBoilerPlates
 - `Assets/Assests.blend` referenced by the old README is missing —
   recreate the asset file, or remove the "Assets Available" section for
@@ -35,3 +22,7 @@ tidy-up (see `docs/superpowers/specs/2026-07-03-repo-tidy-up-design.md`).
 - ~~Transfer this repo from `gregmoille/ScientificGraphicDesign` to the
   `JQInanophotonics` GitHub org~~ — done; `origin` now points at
   `github.com/JQInanophotonics/ScientificGraphicDesign`.
+- ~~pyprettyplot lived here as `01-Plotting/pyprettyplot/`~~ — moved to
+  its own repo, [JQInanophotonics/pyprettyplot](https://github.com/JQInanophotonics/pyprettyplot).
+  Its own follow-up work (font/color defaults, packaging) is tracked
+  there now, not here.
