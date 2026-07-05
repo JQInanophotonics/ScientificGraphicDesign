@@ -41,8 +41,8 @@ The full standard — every number, as a do/do-not table — is
 [02 — Figure rules](02-FigureRules/); the short version:
 
 1. **Clarity, simplicity, consistency.** One point per plot, no superfluous elements (no box/grid/fine ticks you don't need), and the same style across every figure in a given paper.
-2. **One font family, one set of sizes, everywhere.** Default is Helvetica Neue: tick labels 6pt, axis labels 7pt, legend 6pt, annotations 7pt, subplot labels 8pt bold — all in true black.
-3. **One set of line rules, everywhere.** Tick length 2pt, tick width 0.5pt, axis width 0.5pt, plot line width 0.75pt unless you're emphasizing a curve.
+2. **One font family, one set of sizes, everywhere.** Default is Helvetica Neue: tick labels 6pt, axis labels 6pt, legend 5pt, annotations 6pt, subplot labels 8pt bold — all in true black.
+3. **One set of line rules, everywhere.** Tick length 1.5pt, and a single 0.5pt line width for ticks, axes, and plot lines alike — unless you're emphasizing a curve.
 4. **Design for colorblindness** — don't rely on red/green alone to distinguish curves; check Illustrator's proof-colors view (Protanopia/Deuteranopia) before calling a figure done.
 5. **Save vector** (PDF/SVG/EPS). Keep any bitmap **linked**, not embedded, in the `.ai` file — PDF export embeds the raster data into the PDF automatically, so there's no need to embed it by hand (see [03 — Illustrator workflow](03-IllustratorWorkflow/)).
 6. **Keep figures well under 50MB.** Overleaf's git-synced projects cap individual files at 50MB and recommend keeping the whole project under 100MB total — with dozens of figures in a paper, budget each one well below its share of that, not right up against the ceiling. If a single figure is anywhere near it, your bitmap isn't rasterized properly or your data isn't processed down to what the plot actually needs.
