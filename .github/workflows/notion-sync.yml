@@ -1,0 +1,20 @@
+name: Sync README to Notion
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['README.md']
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install @notionhq/client @tryfabric/martian
+      - run: node .github/scripts/sync-readme.js
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}

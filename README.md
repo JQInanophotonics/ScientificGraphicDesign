@@ -8,7 +8,7 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-forewords.svg"/><img src="assets/banner-forewords.svg" width="97%" alt="00 — Forewords"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-forewords.svg"/><img src="assets/banner-forewords.svg" width="97%" alt="Forewords"/></picture>
 
 A good figure does a lot of the persuading in a paper before anyone reads
 a word of the text — and a bad one (mismatched fonts, inconsistent colors,
@@ -35,7 +35,7 @@ assets from here, let Greg Moille know by [email](mailto:gmoille@umd.edu)
 or any other [means](https://srinivasan.jqi.umd.edu/people/gregory-moille)
 — always glad to hear it's being put to good use.
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-the-rules.svg"/><img src="assets/banner-the-rules.svg" width="97%" alt="01 — The Rules, in One Screen"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-the-rules.svg"/><img src="assets/banner-the-rules.svg" width="97%" alt="The Rules, in One Screen"/></picture>
 
 The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 [01 — Plotting data](01-Plotting/); the short version:
@@ -49,7 +49,7 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 
 <a id="pages"></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-pages.svg"/><img src="assets/banner-pages.svg" width="97%" alt="02 — Pages"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-pages.svg"/><img src="assets/banner-pages.svg" width="97%" alt="Pages"/></picture>
 
 | Page | What it covers |
 |------|-----------------|
@@ -58,7 +58,7 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 | [03 — Blender boilerplates](03-BlenderBoilerPlates/) | Ready-made renders and reusable assets for photonics-style figure illustrations |
 | [04 — Fonts](04-Fonts/) | Recommended fonts for figures, and why we don't bundle font files here |
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-repo-layout.svg"/><img src="assets/banner-repo-layout.svg" width="97%" alt="03 — What's in This Repo"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-repo-layout.svg"/><img src="assets/banner-repo-layout.svg" width="97%" alt="What's in This Repo"/></picture>
 
 ```
 ScientificGraphicDesign/
@@ -80,7 +80,7 @@ ScientificGraphicDesign/
     └── README.md
 ```
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-basic-design.svg"/><img src="assets/banner-basic-design.svg" width="97%" alt="04 — Basic Graphic Design"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-basic-design.svg"/><img src="assets/banner-basic-design.svg" width="97%" alt="Basic Graphic Design"/></picture>
 
 We won't go over the basics of graphic design in depth here. The two
 things worth emphasizing:
@@ -112,6 +112,6 @@ Beyond that, if you want to go deeper, we recommend the following resources (and
     - Thinking with Type by Ellen Lupton
     - The Elements of Typographic Style by Robert Bringhurst
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-see-also.svg"/><img src="assets/banner-see-also.svg" width="97%" alt="05 — See Also"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-see-also.svg"/><img src="assets/banner-see-also.svg" width="97%" alt="See Also"/></picture>
 
 Sibling repos in the [JQInanophotonics](https://github.com/JQInanophotonics) org: [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations) — talk design and slide decks, [ScientificDataManagement](https://github.com/JQInanophotonics/ScientificDataManagement) — data collection and archival, [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting) — paper composition and citation practices, [InstrumentControl](https://github.com/JQInanophotonics/InstrumentControl) — lab equipment operation, [3DPrintedLabParts](https://github.com/JQInanophotonics/3DPrintedLabParts) — shared fabricated part designs. Python plotting library: [pyprettyplot](https://github.com/JQInanophotonics/pyprettyplot).
