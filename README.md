@@ -55,8 +55,8 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 |------|-----------------|
 | [01 — Plotting data](01-Plotting/) | Plotting principles, color palettes/colormaps, the [`pyprettyplot`](https://github.com/JQInanophotonics/pyprettyplot) Python package, and a worked example |
 | [02 — Illustrator styles](02-IllustratorsStyles/) | Document settings, grids, color palettes, handling bitmaps, and export presets for Adobe Illustrator |
-| [03 — Blender boilerplates](03-BlenderBoilerPlates/) | Ready-made renders and reusable assets for photonics-style figure illustrations |
-| [04 — Fonts](04-Fonts/) | Recommended fonts for figures, and why we don't bundle font files here |
+| [04 — Blender boilerplates](04-BlenderBoilerPlates/) | Ready-made renders and reusable assets for photonics-style figure illustrations |
+| [05 — Fonts](05-Fonts/) | Recommended fonts for figures, and why we don't bundle font files here |
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-repo-layout.svg"/><img src="assets/banner-repo-layout.svg" width="97%" alt="What's in This Repo"/></picture>
 
@@ -72,11 +72,11 @@ ScientificGraphicDesign/
 ├── 02-IllustratorsStyles/
 │   ├── README.md
 │   └── ColorPalettes/
-├── 03-BlenderBoilerPlates/
+├── 04-BlenderBoilerPlates/
 │   ├── README.md
 │   ├── Assets/
 │   └── MiscModels/
-└── 04-Fonts/
+└── 05-Fonts/
     └── README.md
 ```
 

@@ -45,7 +45,7 @@ This will probably give you good results. If you find that the figures became to
 
 # Graphics design consistency
 
-- **Use the same font for all your figures**. For info, here is what we use (see [Fonts](../04-Fonts) for the full recommendation list): 
+- **Use the same font for all your figures**. For info, here is what we use (see [Fonts](../05-Fonts) for the full recommendation list): 
     - tick labels: Helvetica Neue Regular 6pt
     - axis labels: Helvetica Neue Regular 7pt
     - legend: Helvetica Neue Regular 6pt

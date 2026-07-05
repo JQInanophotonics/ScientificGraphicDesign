@@ -3,7 +3,7 @@
 Tracked follow-up work deliberately deferred during the 2026-07 repo
 tidy-up (see `docs/superpowers/specs/2026-07-03-repo-tidy-up-design.md`).
 
-## 03-BlenderBoilerPlates
+## 04-BlenderBoilerPlates
 - `Assets/Assests.blend` referenced by the old README is missing —
   recreate the asset file, or remove the "Assets Available" section for
   good if it's not coming back.
@@ -12,7 +12,7 @@ tidy-up (see `docs/superpowers/specs/2026-07-03-repo-tidy-up-design.md`).
 - Fill in the "What is it?" / "How to use it?" / "Quick reminder for
   Blender and Settings" sections.
 
-## 04-Fonts
+## 05-Fonts
 - Document the local Helvetica Neue install/activation steps via Adobe
   Creative Cloud.
 - Write the typography deep-dive (serif vs. slab vs. sans-serif, kerning
