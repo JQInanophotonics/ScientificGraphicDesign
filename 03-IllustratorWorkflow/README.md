@@ -22,8 +22,11 @@ Three settings before drawing anything:
    [grid rule](../02-FigureRules/) and *Subdivisions* to 1. Then turn on
    View > Show Grid (`Cmd+'`) and View > Snap to Grid (`Shift+Cmd+'`).
 
-<!-- TODO(Greg): do you start from a template .ai file with these presets
-baked in? If one exists, link it here so nobody sets this up by hand. -->
+A starter template `.ai` file with all three presets baked in will live
+in this folder — until it lands, set them by hand as above.
+
+<!-- TODO(Greg): make the template .ai and link it in the paragraph
+above. -->
 
 ## Working with the grid
 
@@ -49,9 +52,9 @@ Practical habits:
   boxes — tick labels make bounding boxes lie.
 - When two subplots share an axis dimension, give them identical on-grid
   sizes; don't eyeball it.
-
-<!-- TODO(Greg): any layer-organization convention (e.g. one layer per
-panel, separate layer for annotations)? The current page doesn't say. -->
+- Organize layers **one per panel**: each panel — its plot, labels, and
+  annotations — lives on its own layer, so you can lock or hide finished
+  panels while working on the next.
 
 ## Color palettes and swatches
 
@@ -91,10 +94,14 @@ Illustrator pass is assembly and annotation, not repair.
 - Text should stay text. If your labels arrive as outlined paths you
   can't edit, fix the export on the Python side instead of retyping
   labels by hand.
-
-<!-- TODO(Greg): plotly SVG exports often need a specific cleanup
-(released clipping masks, deleted background rects, font substitution
-dialogs). Document the exact steps you actually do here. -->
+- Remove every unnecessary element the import drags along: empty groups,
+  invisible rectangles, leftover masks — anything that carries no
+  information.
+- Release every clipping mask (Object > Clipping Mask > Release), then
+  make each element individual: clip the previously-masked lines to the
+  old mask boundary or delete them outright. Shape Builder (`Shift+M`)
+  with the released mask still selected is the quick way to do the
+  clipping.
 
 ## Bitmap handling
 
