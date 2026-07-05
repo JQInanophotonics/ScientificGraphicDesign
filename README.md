@@ -37,14 +37,14 @@ or any other [means](https://srinivasan.jqi.umd.edu/people/gregory-moille)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-the-rules.svg"/><img src="assets/banner-the-rules.svg" width="97%" alt="The Rules, in One Screen"/></picture>
 
-The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
-[01 — Plotting data](01-Plotting/); the short version:
+The full standard — every number, as a do/do-not table — is
+[02 — Figure rules](02-FigureRules/); the short version:
 
 1. **Clarity, simplicity, consistency.** One point per plot, no superfluous elements (no box/grid/fine ticks you don't need), and the same style across every figure in a given paper.
 2. **One font family, one set of sizes, everywhere.** Default is Helvetica Neue: tick labels 6pt, axis labels 7pt, annotations 7pt, subplot labels 8pt bold — all in true black.
 3. **One set of line rules, everywhere.** Tick length 2pt, tick width 0.5pt, axis width 0.5pt, plot line width 0.75pt unless you're emphasizing a curve.
 4. **Design for colorblindness** — don't rely on red/green alone to distinguish curves; check Illustrator's proof-colors view (Protanopia/Deuteranopia) before calling a figure done.
-5. **Save vector** (PDF/SVG/EPS). Keep any bitmap **linked**, not embedded, in the `.ai` file — PDF export embeds the raster data into the PDF automatically, so there's no need to embed it by hand (see [02 — Illustrator styles](02-IllustratorsStyles/)).
+5. **Save vector** (PDF/SVG/EPS). Keep any bitmap **linked**, not embedded, in the `.ai` file — PDF export embeds the raster data into the PDF automatically, so there's no need to embed it by hand (see [03 — Illustrator workflow](03-IllustratorWorkflow/)).
 6. **Keep figures well under 50MB.** Overleaf's git-synced projects cap individual files at 50MB and recommend keeping the whole project under 100MB total — with dozens of figures in a paper, budget each one well below its share of that, not right up against the ceiling. If a single figure is anywhere near it, your bitmap isn't rasterized properly or your data isn't processed down to what the plot actually needs.
 
 <a id="pages"></a>
@@ -54,7 +54,8 @@ The details live in [02 — Illustrator styles](02-IllustratorsStyles/) and
 | Page | What it covers |
 |------|-----------------|
 | [01 — Plotting data](01-Plotting/) | Plotting principles, color palettes/colormaps, the [`pyprettyplot`](https://github.com/JQInanophotonics/pyprettyplot) Python package, and a worked example |
-| [02 — Illustrator styles](02-IllustratorsStyles/) | Document settings, grids, color palettes, handling bitmaps, and export presets for Adobe Illustrator |
+| [02 — Figure rules](02-FigureRules/) | The standard every figure must meet — fonts, lines, colors, grid, export — as one do/do-not table |
+| [03 — Illustrator workflow](03-IllustratorWorkflow/) | Working in Adobe Illustrator: document setup, grids, palettes, placing plots, bitmaps, proofing, export |
 | [04 — Blender boilerplates](04-BlenderBoilerPlates/) | Ready-made renders and reusable assets for photonics-style figure illustrations |
 | [05 — Fonts](05-Fonts/) | Recommended fonts for figures, and why we don't bundle font files here |
 
@@ -69,7 +70,9 @@ ScientificGraphicDesign/
 │   ├── README.md
 │   ├── ExampleDataSet/
 │   └── Notebook.ipynb
-├── 02-IllustratorsStyles/
+├── 02-FigureRules/
+│   └── README.md
+├── 03-IllustratorWorkflow/
 │   ├── README.md
 │   └── ColorPalettes/
 ├── 04-BlenderBoilerPlates/

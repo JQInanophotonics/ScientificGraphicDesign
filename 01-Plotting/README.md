@@ -57,7 +57,7 @@ Plotting the data will probably get you up to 3/4 of the way to a complete figur
 - Make all your font the right size 
 - Avoid the need for unnecessary edits
 
-If you did that correctly, then the work that will be done in Adobe Illustrator/Inkscape/etc. will be much easier. Some tips for Adobe Illustrator are provided in [02 — Illustrator styles](../02-IllustratorsStyles).
+If you did that correctly, then the work that will be done in Adobe Illustrator/Inkscape/etc. will be much easier. The standard your figure must meet is [02 — Figure rules](../02-FigureRules/), and the Illustrator side of getting there is [03 — Illustrator workflow](../03-IllustratorWorkflow/).
 
 ## Archiving your figure data
 

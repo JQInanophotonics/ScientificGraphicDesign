@@ -40,4 +40,4 @@ good ones aren't free.
 A deeper typography write-up (serif vs. slab vs. sans-serif, kerning and
 width, glyph coverage, and how to pick a font as a scientist) hasn't been
 written yet — tracked in [TODO.md](../TODO.md). For scientific graphic
-design tips more broadly, see [../02-IllustratorsStyles](../02-IllustratorsStyles).
+design tips more broadly, see [02 — Figure rules](../02-FigureRules/) and [03 — Illustrator workflow](../03-IllustratorWorkflow/).
