@@ -9,7 +9,7 @@
 - **Stick to a style** and try to find what works well for you.
 - **Don't reinvent the wheel.** Usually, big journals have hired real graphic designers, so their style is rarely off — it can be a great starting point. Same for color palettes: professionals already took care of it.
 - **Create a habit.** Always try to plot your figures as if you will publish them. It will create a mental gymnastic, leading to muscle memory, making clear and simple figures much easier over time.
-- **Make it automatic**. Minimize your workload by creating a function/module/etc. that pre-loads your style and makes consistency automatic, for instance using the [pyprettyplot package here](./pyprettyplot). The same goes for exporting the figure; you don't want to spend too much time tweaking things in the vector software because you didn't plot things correctly.
+- **Make it automatic**. Minimize your workload by creating a function/module/etc. that pre-loads your style and makes consistency automatic, for instance using the [pyprettyplot package](https://github.com/JQInanophotonics/pyprettyplot). The same goes for exporting the figure; you don't want to spend too much time tweaking things in the vector software because you didn't plot things correctly.
 
 
 ## Colorpalettes and colormaps 
