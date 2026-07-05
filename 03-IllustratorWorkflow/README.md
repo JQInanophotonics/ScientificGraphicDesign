@@ -156,7 +156,7 @@ What the preset does, and why:
   color on screens.
 
 Sanity checks on the exported file, per the
-[export rule](../02-FigureRules/): the file is nowhere near the 50 MB
+[export rule](../02-FigureRules/): the file is nowhere near the size
 cap (if it is, a bitmap wasn't rasterized properly or the plot carries
 far more points than it shows), and it drops into LaTeX at final size —
 if you need `\includegraphics[width=\textwidth]` to make it fit, the

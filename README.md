@@ -41,7 +41,7 @@ The full standard — every number, as a do/do-not table — is
 [02 — Figure rules](02-FigureRules/); the short version:
 
 1. **Clarity, simplicity, consistency.** One point per plot, no superfluous elements (no box/grid/fine ticks you don't need), and the same style across every figure in a given paper.
-2. **One font family, one set of sizes, everywhere.** Default is Helvetica Neue: tick labels 6pt, axis labels 7pt, annotations 7pt, subplot labels 8pt bold — all in true black.
+2. **One font family, one set of sizes, everywhere.** Default is Helvetica Neue: tick labels 6pt, axis labels 7pt, legend 6pt, annotations 7pt, subplot labels 8pt bold — all in true black.
 3. **One set of line rules, everywhere.** Tick length 2pt, tick width 0.5pt, axis width 0.5pt, plot line width 0.75pt unless you're emphasizing a curve.
 4. **Design for colorblindness** — don't rely on red/green alone to distinguish curves; check Illustrator's proof-colors view (Protanopia/Deuteranopia) before calling a figure done.
 5. **Save vector** (PDF/SVG/EPS). Keep any bitmap **linked**, not embedded, in the `.ai` file — PDF export embeds the raster data into the PDF automatically, so there's no need to embed it by hand (see [03 — Illustrator workflow](03-IllustratorWorkflow/)).

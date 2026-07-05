@@ -117,7 +117,10 @@ implementation so they can be filled in.
 
 Rules values are not restated here — sections reference
 `../02-FigureRules/` (e.g. "set type per the [typography
-rules](../02-FigureRules/README.md)").
+rules](../02-FigureRules/README.md)"). Sanctioned exceptions: settings
+recipes a reader follows inside a dialog box — the Object > Rasterize
+values, the export preset's own settings, and the artboard-width typing
+tip — stay inline where the reader needs them.
 
 ## Cross-reference updates
 
